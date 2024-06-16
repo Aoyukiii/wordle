@@ -1,0 +1,111 @@
+* {
+    background-color: rgb(24, 24, 24);
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+.modal {
+    /* background-color: aqua; */
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(146, 111, 111);
+
+    font-size: 30px;
+
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+.modal.show {
+    opacity: 1;
+}
+.modal * {
+    background: none;
+    text-align: center;
+}
+#main.modal #start {
+    border: none;
+    border-radius: 5px;
+    background-color: #bd9191;
+    font-size: 40px;
+    width: 400px;
+
+    color: white;
+}
+
+
+.board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+.board-row {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    gap: 10px;
+    height: 100px;
+}
+.board-tile {
+    border: 2px solid;
+    border-color: gray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 62px;
+}
+
+
+.keyboard-row {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+.key {
+    width: 40px;
+    height: 80px;
+    color: white;
+    background-color: gray;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+#Enter.key {
+    width: 80px;
+    background-color: lightblue;
+    /* user-select: none; */
+}
+#Enter.key:active {
+    background-color: rgb(110, 140, 150);
+}
+#Backspace.key {
+    width: 60px;
+    background-color: darkred;
+}
+#Backspace.key:active {
+    background-color: rgb(97, 0, 0);
+}
+.key:active {
+    background-color: rgb(95, 95, 95);
+}
+
+
+.status-1 {
+    background-color: gold;
+}
+.status-2 {
+    background-color: green;
+}
+.status-3 {
+    background-color: black;
+}
